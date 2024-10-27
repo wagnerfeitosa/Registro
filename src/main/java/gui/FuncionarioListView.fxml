@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="258.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FuncionarioListController">
+   <children>
+      <Label text="LISTA FUNCIONARIOS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="200.0" />
+         </VBox.margin>
+      </Label>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btNovo" mnemonicParsing="false" onAction="#btNovoAction" text="Novo" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewFuncionario" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tbId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tbNome" prefWidth="75.0" text="NOME" />
+            <TableColumn fx:id="tbEmail" prefWidth="75.0" text="EMAIL" />
+            <TableColumn fx:id="tbNascimento" prefWidth="94.0" text="NASCIMENTO" />
+            <TableColumn fx:id="tbSalario" prefWidth="75.0" text="SALARIO" />
+            <TableColumn fx:id="tbEditar" prefWidth="75.0" />
+            <TableColumn fx:id="tbRemover" prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

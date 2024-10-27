@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="208.0" prefWidth="480.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+   <children>
+      <Label text="SOBRE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Application :Registro de Departamento e Funcionarios" />
+   </children>
+</VBox>
